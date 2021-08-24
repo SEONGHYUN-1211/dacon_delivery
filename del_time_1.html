@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/themes/roma.js"></script>
+
+    
+</head>
+<body>
+        <style>
+        .tab {
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+        }
+
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 12px 16px;
+            transition: 0.3s;
+        }
+
+        .tab button:hover {
+            background-color: #ddd;
+        }
+
+        .tab button.active {
+            background-color: #ccc;
+        }
+
+        .chart-container {
+            display: none;
+            padding: 6px 12px;
+            border-top: none;
+        }
+    </style>
+    <div class="tab">
+            <button class="tablinks" onclick="showChart(event, 'a05ee6137795478783d2ce92938d5ca4')">서울</button>
+            <button class="tablinks" onclick="showChart(event, '1a82382ce02c4e08a3a7a97cea7fbed0')">경기</button>
+    </div>
+
+    <div class="box">
+                <div id="a05ee6137795478783d2ce92938d5ca4" class="chart-container" style="width:600px; height:400px;"></div>
+    <script>
+        var chart_a05ee6137795478783d2ce92938d5ca4 = echarts.init(
+            document.getElementById('a05ee6137795478783d2ce92938d5ca4'), 'roma', {renderer: 'canvas'});
+        var option_a05ee6137795478783d2ce92938d5ca4 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "series": [
+        {
+            "type": "bar",
+            "name": "1\ucc28 \uc720\ud589 \uc774\uc804",
+            "data": [
+                27.7,
+                28.6,
+                28.5
+            ],
+            "barCategoryGap": "20%",
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            }
+        },
+        {
+            "type": "bar",
+            "name": "1\ucc28 \uc720\ud589 \uc774\ud6c4",
+            "data": [
+                27.1,
+                26.5,
+                27.5
+            ],
+            "barCategoryGap": "20%",
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "1\ucc28 \uc720\ud589 \uc774\uc804",
+                "1\ucc28 \uc720\ud589 \uc774\ud6c4"
+            ],
+            "selected": {
+                "1\ucc28 \uc720\ud589 \uc774\uc804": true,
+                "1\ucc28 \uc720\ud589 \uc774\ud6c4": true
+            },
+            "show": true,
+            "right": "10%",
+            "top": "5%",
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14,
+            "icon": "pin"
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "axis",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "cross"
+        },
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0
+    },
+    "xAxis": [
+        {
+            "name": "\uad6c",
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "\uad6c\ub85c\uad6c",
+                "\uae08\ucc9c\uad6c",
+                "\uc601\ub4f1\ud3ec\uad6c"
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
+    "title": [
+        {
+            "text": "1\ucc28\uc720\ud589 \uc774\uc804/\uc774\ud6c4 \ud3c9\uade0\ubc30\ub2ec\uc2dc\uac04",
+            "subtext": "\ub9c8\uc6b0\uc2a4\ub97c \uadf8\ub798\ud504\uc5d0 \uc62c\ub824 \uc815\ud655\ud55c \uc218\uce58\ub97c \ud655\uc778\ud574\ubcf4\uc138\uc694!",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ]
+};
+        chart_a05ee6137795478783d2ce92938d5ca4.setOption(option_a05ee6137795478783d2ce92938d5ca4);
+    </script>
+                <div id="1a82382ce02c4e08a3a7a97cea7fbed0" class="chart-container" style="width:600px; height:400px;"></div>
+    <script>
+        var chart_1a82382ce02c4e08a3a7a97cea7fbed0 = echarts.init(
+            document.getElementById('1a82382ce02c4e08a3a7a97cea7fbed0'), 'roma', {renderer: 'canvas'});
+        var option_1a82382ce02c4e08a3a7a97cea7fbed0 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "series": [
+        {
+            "type": "bar",
+            "name": "1\ucc28 \uc720\ud589 \uc774\uc804",
+            "data": [
+                28.2,
+                25.1,
+                25.3
+            ],
+            "barCategoryGap": "20%",
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            }
+        },
+        {
+            "type": "bar",
+            "name": "1\ucc28 \uc720\ud589 \uc774\ud6c4",
+            "data": [
+                26.7,
+                23.3,
+                23.4
+            ],
+            "barCategoryGap": "20%",
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "1\ucc28 \uc720\ud589 \uc774\uc804",
+                "1\ucc28 \uc720\ud589 \uc774\ud6c4"
+            ],
+            "selected": {
+                "1\ucc28 \uc720\ud589 \uc774\uc804": true,
+                "1\ucc28 \uc720\ud589 \uc774\ud6c4": true
+            },
+            "show": true,
+            "right": "10%",
+            "top": "5%",
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14,
+            "icon": "pin"
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "axis",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "cross"
+        },
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0
+    },
+    "xAxis": [
+        {
+            "name": "\uc2dc",
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "\uad11\uba85\uc2dc",
+                "\ubd80\ucc9c\uc2dc",
+                "\uc758\uc815\ubd80\uc2dc"
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
+    "title": [
+        {
+            "text": "1\ucc28\uc720\ud589 \uc774\uc804/\uc774\ud6c4 \ud3c9\uade0\ubc30\ub2ec\uc2dc\uac04",
+            "subtext": "\ub9c8\uc6b0\uc2a4\ub97c \uadf8\ub798\ud504\uc5d0 \uc62c\ub824 \uc815\ud655\ud55c \uc218\uce58\ub97c \ud655\uc778\ud574\ubcf4\uc138\uc694!",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ]
+};
+        chart_1a82382ce02c4e08a3a7a97cea7fbed0.setOption(option_1a82382ce02c4e08a3a7a97cea7fbed0);
+    </script>
+    </div>
+
+    <script>
+    </script>
+    <script>
+        (function() {
+            containers = document.getElementsByClassName("chart-container");
+            if(containers.length > 0) {
+                containers[0].style.display = "block";
+            }
+        })()
+
+        function showChart(evt, chartID) {
+            let containers = document.getElementsByClassName("chart-container");
+            for (let i = 0; i < containers.length; i++) {
+                containers[i].style.display = "none";
+            }
+
+            let tablinks = document.getElementsByClassName("tablinks");
+            for (let i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = "tablinks";
+            }
+
+            document.getElementById(chartID).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</body>
+</html>

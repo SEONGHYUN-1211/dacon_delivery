@@ -1,0 +1,1847 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/themes/shine.js"></script>
+
+    
+</head>
+<body>
+        <style>
+        .tab {
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+        }
+
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 12px 16px;
+            transition: 0.3s;
+        }
+
+        .tab button:hover {
+            background-color: #ddd;
+        }
+
+        .tab button.active {
+            background-color: #ccc;
+        }
+
+        .chart-container {
+            display: none;
+            padding: 6px 12px;
+            border-top: none;
+        }
+    </style>
+    <div class="tab">
+            <button class="tablinks" onclick="showChart(event, 'd24b527886514f67b5b8689e76cd5e23')">걷기 실천율</button>
+            <button class="tablinks" onclick="showChart(event, 'edbb642d923a482cbbd0806712a629e8')">건강생활 실천율</button>
+            <button class="tablinks" onclick="showChart(event, 'f0d737bd7b254bbea076e9ad5c0b6869')">비만율</button>
+            <button class="tablinks" onclick="showChart(event, '1a97141a31cb40d6a474dbb932cff00d')">체중조절시도율</button>
+    </div>
+
+    <div class="box">
+                <div id="d24b527886514f67b5b8689e76cd5e23" class="chart-container" style="width:900px; height:500px;"></div>
+    <script>
+        var chart_d24b527886514f67b5b8689e76cd5e23 = echarts.init(
+            document.getElementById('d24b527886514f67b5b8689e76cd5e23'), 'shine', {renderer: 'canvas'});
+        var option_d24b527886514f67b5b8689e76cd5e23 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "series": [
+        {
+            "type": "line",
+            "name": "\uc11c\uc6b8",
+            "connectNulls": false,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "step": false,
+            "data": [
+                [
+                    "2008",
+                    57.3
+                ],
+                [
+                    "2009",
+                    60.7
+                ],
+                [
+                    "2010",
+                    55.6
+                ],
+                [
+                    "2011",
+                    54.0
+                ],
+                [
+                    "2012",
+                    52.1
+                ],
+                [
+                    "2013",
+                    55.9
+                ],
+                [
+                    "2014",
+                    55.5
+                ],
+                [
+                    "2015",
+                    57.5
+                ],
+                [
+                    "2016",
+                    55.8
+                ],
+                [
+                    "2017",
+                    61.5
+                ],
+                [
+                    "2018",
+                    67.0
+                ],
+                [
+                    "2019",
+                    61.0
+                ],
+                [
+                    "2020",
+                    53.1
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "zlevel": 0,
+            "z": 0
+        },
+        {
+            "type": "line",
+            "name": "\uacbd\uae30",
+            "connectNulls": false,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "step": false,
+            "data": [
+                [
+                    "2008",
+                    49.6
+                ],
+                [
+                    "2009",
+                    49.2
+                ],
+                [
+                    "2010",
+                    42.1
+                ],
+                [
+                    "2011",
+                    42.9
+                ],
+                [
+                    "2012",
+                    44.1
+                ],
+                [
+                    "2013",
+                    42.0
+                ],
+                [
+                    "2014",
+                    40.7
+                ],
+                [
+                    "2015",
+                    41.8
+                ],
+                [
+                    "2016",
+                    43.8
+                ],
+                [
+                    "2017",
+                    43.5
+                ],
+                [
+                    "2018",
+                    49.4
+                ],
+                [
+                    "2019",
+                    45.4
+                ],
+                [
+                    "2020",
+                    40.7
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "zlevel": 0,
+            "z": 0
+        },
+        {
+            "type": "line",
+            "name": "\uc218\ub3c4\uad8c",
+            "connectNulls": false,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "step": false,
+            "data": [
+                [
+                    "2008",
+                    52.9
+                ],
+                [
+                    "2009",
+                    54.6
+                ],
+                [
+                    "2010",
+                    49.0
+                ],
+                [
+                    "2011",
+                    48.2
+                ],
+                [
+                    "2012",
+                    47.7
+                ],
+                [
+                    "2013",
+                    48.5
+                ],
+                [
+                    "2014",
+                    48.0
+                ],
+                [
+                    "2015",
+                    48.7
+                ],
+                [
+                    "2016",
+                    48.7
+                ],
+                [
+                    "2017",
+                    51.1
+                ],
+                [
+                    "2018",
+                    56.6
+                ],
+                [
+                    "2019",
+                    52.0
+                ],
+                [
+                    "2020",
+                    45.8
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "zlevel": 0,
+            "z": 0
+        },
+        {
+            "type": "line",
+            "name": "\ube44\uc218\ub3c4\uad8c",
+            "connectNulls": false,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "step": false,
+            "data": [
+                [
+                    "2008",
+                    49.9
+                ],
+                [
+                    "2009",
+                    47.7
+                ],
+                [
+                    "2010",
+                    41.0
+                ],
+                [
+                    "2011",
+                    39.8
+                ],
+                [
+                    "2012",
+                    39.6
+                ],
+                [
+                    "2013",
+                    38.0
+                ],
+                [
+                    "2014",
+                    37.4
+                ],
+                [
+                    "2015",
+                    40.7
+                ],
+                [
+                    "2016",
+                    38.0
+                ],
+                [
+                    "2017",
+                    39.6
+                ],
+                [
+                    "2018",
+                    42.7
+                ],
+                [
+                    "2019",
+                    40.0
+                ],
+                [
+                    "2020",
+                    36.5
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "zlevel": 0,
+            "z": 0
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\uc11c\uc6b8",
+                "\uacbd\uae30",
+                "\uc218\ub3c4\uad8c",
+                "\ube44\uc218\ub3c4\uad8c"
+            ],
+            "selected": {
+                "\uc11c\uc6b8": true,
+                "\uacbd\uae30": true,
+                "\uc218\ub3c4\uad8c": true,
+                "\ube44\uc218\ub3c4\uad8c": true
+            },
+            "show": true,
+            "right": "10%",
+            "top": "5%",
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14,
+            "icon": "pin"
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "axis",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "cross"
+        },
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0
+    },
+    "xAxis": [
+        {
+            "name": "\uc5f0\ub3c4",
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018",
+                "2019",
+                "2020"
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
+    "title": [
+        {
+            "text": "\uc9c0\uc5ed\ubcc4 \uac77\uae30 \uc2e4\ucc9c\uc728",
+            "subtext": "\ucd5c\uadfc 1\uc8fc\uc77c, 1\ud68c 30\ubd84 \uc774\uc0c1, 1\uc77c 30\ubd84 \uc774\uc0c1 \uac77\uae30, \uc8fc 5\uc77c \uc774\uc0c1 \uc2e4\ucc9c",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ]
+};
+        chart_d24b527886514f67b5b8689e76cd5e23.setOption(option_d24b527886514f67b5b8689e76cd5e23);
+    </script>
+                <div id="edbb642d923a482cbbd0806712a629e8" class="chart-container" style="width:900px; height:500px;"></div>
+    <script>
+        var chart_edbb642d923a482cbbd0806712a629e8 = echarts.init(
+            document.getElementById('edbb642d923a482cbbd0806712a629e8'), 'shine', {renderer: 'canvas'});
+        var option_edbb642d923a482cbbd0806712a629e8 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "series": [
+        {
+            "type": "line",
+            "name": "\uc11c\uc6b8",
+            "connectNulls": false,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "step": false,
+            "data": [
+                [
+                    "2008",
+                    39.1
+                ],
+                [
+                    "2009",
+                    42.7
+                ],
+                [
+                    "2010",
+                    39.1
+                ],
+                [
+                    "2011",
+                    37.4
+                ],
+                [
+                    "2012",
+                    36.5
+                ],
+                [
+                    "2013",
+                    39.0
+                ],
+                [
+                    "2014",
+                    39.2
+                ],
+                [
+                    "2015",
+                    41.1
+                ],
+                [
+                    "2016",
+                    40.1
+                ],
+                [
+                    "2017",
+                    44.3
+                ],
+                [
+                    "2018",
+                    49.2
+                ],
+                [
+                    "2019",
+                    45.2
+                ],
+                [
+                    "2020",
+                    40.4
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "zlevel": 0,
+            "z": 0
+        },
+        {
+            "type": "line",
+            "name": "\uacbd\uae30",
+            "connectNulls": false,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "step": false,
+            "data": [
+                [
+                    "2008",
+                    33.6
+                ],
+                [
+                    "2009",
+                    33.6
+                ],
+                [
+                    "2010",
+                    29.4
+                ],
+                [
+                    "2011",
+                    29.6
+                ],
+                [
+                    "2012",
+                    30.4
+                ],
+                [
+                    "2013",
+                    28.7
+                ],
+                [
+                    "2014",
+                    28.0
+                ],
+                [
+                    "2015",
+                    29.6
+                ],
+                [
+                    "2016",
+                    30.3
+                ],
+                [
+                    "2017",
+                    30.5
+                ],
+                [
+                    "2018",
+                    35.8
+                ],
+                [
+                    "2019",
+                    32.5
+                ],
+                [
+                    "2020",
+                    29.9
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "zlevel": 0,
+            "z": 0
+        },
+        {
+            "type": "line",
+            "name": "\uc218\ub3c4\uad8c",
+            "connectNulls": false,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "step": false,
+            "data": [
+                [
+                    "2008",
+                    36.0
+                ],
+                [
+                    "2009",
+                    37.9
+                ],
+                [
+                    "2010",
+                    34.3
+                ],
+                [
+                    "2011",
+                    33.2
+                ],
+                [
+                    "2012",
+                    33.1
+                ],
+                [
+                    "2013",
+                    33.6
+                ],
+                [
+                    "2014",
+                    33.3
+                ],
+                [
+                    "2015",
+                    34.7
+                ],
+                [
+                    "2016",
+                    34.2
+                ],
+                [
+                    "2017",
+                    36.2
+                ],
+                [
+                    "2018",
+                    41.1
+                ],
+                [
+                    "2019",
+                    37.8
+                ],
+                [
+                    "2020",
+                    34.1
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "zlevel": 0,
+            "z": 0
+        },
+        {
+            "type": "line",
+            "name": "\ube44\uc218\ub3c4\uad8c",
+            "connectNulls": false,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "step": false,
+            "data": [
+                [
+                    "2008",
+                    34.6
+                ],
+                [
+                    "2009",
+                    33.0
+                ],
+                [
+                    "2010",
+                    28.9
+                ],
+                [
+                    "2011",
+                    27.7
+                ],
+                [
+                    "2012",
+                    27.6
+                ],
+                [
+                    "2013",
+                    26.3
+                ],
+                [
+                    "2014",
+                    25.9
+                ],
+                [
+                    "2015",
+                    28.6
+                ],
+                [
+                    "2016",
+                    26.5
+                ],
+                [
+                    "2017",
+                    27.7
+                ],
+                [
+                    "2018",
+                    30.4
+                ],
+                [
+                    "2019",
+                    28.6
+                ],
+                [
+                    "2020",
+                    26.5
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "zlevel": 0,
+            "z": 0
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\uc11c\uc6b8",
+                "\uacbd\uae30",
+                "\uc218\ub3c4\uad8c",
+                "\ube44\uc218\ub3c4\uad8c"
+            ],
+            "selected": {
+                "\uc11c\uc6b8": true,
+                "\uacbd\uae30": true,
+                "\uc218\ub3c4\uad8c": true,
+                "\ube44\uc218\ub3c4\uad8c": true
+            },
+            "show": true,
+            "right": "10%",
+            "top": "5%",
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14,
+            "icon": "pin"
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "axis",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "cross"
+        },
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0
+    },
+    "xAxis": [
+        {
+            "name": "\uc5f0\ub3c4",
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018",
+                "2019",
+                "2020"
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
+    "title": [
+        {
+            "text": "\uc9c0\uc5ed\ubcc4 \uac74\uac15\uc0dd\ud65c \uc2e4\ucc9c\uc728",
+            "subtext": "\uae08\uc5f0, \uc808\uc8fc, \uac77\uae30\ub97c \ubaa8\ub450 \uc2e4\ucc9c\ud558\ub294 \uc0ac\ub78c\uc758 \uc218\uc758 \ube44\uc728",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ]
+};
+        chart_edbb642d923a482cbbd0806712a629e8.setOption(option_edbb642d923a482cbbd0806712a629e8);
+    </script>
+                <div id="f0d737bd7b254bbea076e9ad5c0b6869" class="chart-container" style="width:900px; height:500px;"></div>
+    <script>
+        var chart_f0d737bd7b254bbea076e9ad5c0b6869 = echarts.init(
+            document.getElementById('f0d737bd7b254bbea076e9ad5c0b6869'), 'shine', {renderer: 'canvas'});
+        var option_f0d737bd7b254bbea076e9ad5c0b6869 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "series": [
+        {
+            "type": "line",
+            "name": "\uc11c\uc6b8",
+            "connectNulls": false,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "step": false,
+            "data": [
+                [
+                    "2008",
+                    20.7
+                ],
+                [
+                    "2009",
+                    21.4
+                ],
+                [
+                    "2010",
+                    21.7
+                ],
+                [
+                    "2011",
+                    22.5
+                ],
+                [
+                    "2012",
+                    23.4
+                ],
+                [
+                    "2013",
+                    23.1
+                ],
+                [
+                    "2014",
+                    23.6
+                ],
+                [
+                    "2015",
+                    24.5
+                ],
+                [
+                    "2016",
+                    25.5
+                ],
+                [
+                    "2017",
+                    25.5
+                ],
+                [
+                    "2018",
+                    28.6
+                ],
+                [
+                    "2019",
+                    null
+                ],
+                [
+                    "2020",
+                    28.5
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "zlevel": 0,
+            "z": 0
+        },
+        {
+            "type": "line",
+            "name": "\uacbd\uae30",
+            "connectNulls": false,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "step": false,
+            "data": [
+                [
+                    "2008",
+                    22.3
+                ],
+                [
+                    "2009",
+                    23.5
+                ],
+                [
+                    "2010",
+                    23.1
+                ],
+                [
+                    "2011",
+                    23.4
+                ],
+                [
+                    "2012",
+                    24.6
+                ],
+                [
+                    "2013",
+                    24.6
+                ],
+                [
+                    "2014",
+                    24.9
+                ],
+                [
+                    "2015",
+                    26.0
+                ],
+                [
+                    "2016",
+                    27.5
+                ],
+                [
+                    "2017",
+                    28.2
+                ],
+                [
+                    "2018",
+                    30.7
+                ],
+                [
+                    "2019",
+                    null
+                ],
+                [
+                    "2020",
+                    31.6
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "zlevel": 0,
+            "z": 0
+        },
+        {
+            "type": "line",
+            "name": "\uc218\ub3c4\uad8c",
+            "connectNulls": false,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "step": false,
+            "data": [
+                [
+                    "2008",
+                    21.7
+                ],
+                [
+                    "2009",
+                    22.5
+                ],
+                [
+                    "2010",
+                    22.6
+                ],
+                [
+                    "2011",
+                    23.1
+                ],
+                [
+                    "2012",
+                    24.1
+                ],
+                [
+                    "2013",
+                    24.1
+                ],
+                [
+                    "2014",
+                    24.6
+                ],
+                [
+                    "2015",
+                    25.5
+                ],
+                [
+                    "2016",
+                    26.8
+                ],
+                [
+                    "2017",
+                    27.3
+                ],
+                [
+                    "2018",
+                    30.0
+                ],
+                [
+                    "2019",
+                    null
+                ],
+                [
+                    "2020",
+                    30.6
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "zlevel": 0,
+            "z": 0
+        },
+        {
+            "type": "line",
+            "name": "\ube44\uc218\ub3c4\uad8c",
+            "connectNulls": false,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "step": false,
+            "data": [
+                [
+                    "2008",
+                    20.7
+                ],
+                [
+                    "2009",
+                    21.9
+                ],
+                [
+                    "2010",
+                    21.9
+                ],
+                [
+                    "2011",
+                    22.6
+                ],
+                [
+                    "2012",
+                    23.3
+                ],
+                [
+                    "2013",
+                    24.1
+                ],
+                [
+                    "2014",
+                    24.6
+                ],
+                [
+                    "2015",
+                    26.0
+                ],
+                [
+                    "2016",
+                    27.2
+                ],
+                [
+                    "2017",
+                    27.8
+                ],
+                [
+                    "2018",
+                    30.7
+                ],
+                [
+                    "2019",
+                    null
+                ],
+                [
+                    "2020",
+                    30.5
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "zlevel": 0,
+            "z": 0
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\uc11c\uc6b8",
+                "\uacbd\uae30",
+                "\uc218\ub3c4\uad8c",
+                "\ube44\uc218\ub3c4\uad8c"
+            ],
+            "selected": {
+                "\uc11c\uc6b8": true,
+                "\uacbd\uae30": true,
+                "\uc218\ub3c4\uad8c": true,
+                "\ube44\uc218\ub3c4\uad8c": true
+            },
+            "show": true,
+            "right": "10%",
+            "top": "5%",
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14,
+            "icon": "pin"
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "axis",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "cross"
+        },
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0
+    },
+    "xAxis": [
+        {
+            "name": "\uc5f0\ub3c4",
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018",
+                "2019",
+                "2020"
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
+    "title": [
+        {
+            "text": "\uc9c0\uc5ed\ubcc4 \ube44\ub9cc\uc728",
+            "subtext": "BMI \uc218\uce58 25\uc774\uc0c1\uc778 \uc0ac\ub78c\uc758 \uc218\uc758 \ube44\uc728",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ]
+};
+        chart_f0d737bd7b254bbea076e9ad5c0b6869.setOption(option_f0d737bd7b254bbea076e9ad5c0b6869);
+    </script>
+                <div id="1a97141a31cb40d6a474dbb932cff00d" class="chart-container" style="width:900px; height:500px;"></div>
+    <script>
+        var chart_1a97141a31cb40d6a474dbb932cff00d = echarts.init(
+            document.getElementById('1a97141a31cb40d6a474dbb932cff00d'), 'shine', {renderer: 'canvas'});
+        var option_1a97141a31cb40d6a474dbb932cff00d = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "series": [
+        {
+            "type": "line",
+            "name": "\uc11c\uc6b8",
+            "connectNulls": false,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "step": false,
+            "data": [
+                [
+                    "2008",
+                    46.5
+                ],
+                [
+                    "2009",
+                    52.8
+                ],
+                [
+                    "2010",
+                    55.9
+                ],
+                [
+                    "2011",
+                    61.7
+                ],
+                [
+                    "2012",
+                    59.2
+                ],
+                [
+                    "2013",
+                    64.4
+                ],
+                [
+                    "2014",
+                    62.9
+                ],
+                [
+                    "2015",
+                    65.4
+                ],
+                [
+                    "2016",
+                    63.8
+                ],
+                [
+                    "2017",
+                    67.3
+                ],
+                [
+                    "2018",
+                    63.5
+                ],
+                [
+                    "2019",
+                    69.5
+                ],
+                [
+                    "2020",
+                    71.8
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "zlevel": 0,
+            "z": 0
+        },
+        {
+            "type": "line",
+            "name": "\uacbd\uae30",
+            "connectNulls": false,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "step": false,
+            "data": [
+                [
+                    "2008",
+                    48.2
+                ],
+                [
+                    "2009",
+                    50.2
+                ],
+                [
+                    "2010",
+                    52.9
+                ],
+                [
+                    "2011",
+                    59.6
+                ],
+                [
+                    "2012",
+                    56.9
+                ],
+                [
+                    "2013",
+                    61.7
+                ],
+                [
+                    "2014",
+                    58.2
+                ],
+                [
+                    "2015",
+                    62.0
+                ],
+                [
+                    "2016",
+                    60.2
+                ],
+                [
+                    "2017",
+                    64.9
+                ],
+                [
+                    "2018",
+                    61.4
+                ],
+                [
+                    "2019",
+                    66.3
+                ],
+                [
+                    "2020",
+                    67.6
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "zlevel": 0,
+            "z": 0
+        },
+        {
+            "type": "line",
+            "name": "\uc218\ub3c4\uad8c",
+            "connectNulls": false,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "step": false,
+            "data": [
+                [
+                    "2008",
+                    46.6
+                ],
+                [
+                    "2009",
+                    51.4
+                ],
+                [
+                    "2010",
+                    54.0
+                ],
+                [
+                    "2011",
+                    60.4
+                ],
+                [
+                    "2012",
+                    57.7
+                ],
+                [
+                    "2013",
+                    62.8
+                ],
+                [
+                    "2014",
+                    60.7
+                ],
+                [
+                    "2015",
+                    63.9
+                ],
+                [
+                    "2016",
+                    61.9
+                ],
+                [
+                    "2017",
+                    65.9
+                ],
+                [
+                    "2018",
+                    62.5
+                ],
+                [
+                    "2019",
+                    67.5
+                ],
+                [
+                    "2020",
+                    69.3
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "zlevel": 0,
+            "z": 0
+        },
+        {
+            "type": "line",
+            "name": "\ube44\uc218\ub3c4\uad8c",
+            "connectNulls": false,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "step": false,
+            "data": [
+                [
+                    "2008",
+                    38.8
+                ],
+                [
+                    "2009",
+                    44.5
+                ],
+                [
+                    "2010",
+                    48.8
+                ],
+                [
+                    "2011",
+                    55.8
+                ],
+                [
+                    "2012",
+                    51.8
+                ],
+                [
+                    "2013",
+                    58.7
+                ],
+                [
+                    "2014",
+                    57.3
+                ],
+                [
+                    "2015",
+                    60.7
+                ],
+                [
+                    "2016",
+                    59.7
+                ],
+                [
+                    "2017",
+                    62.8
+                ],
+                [
+                    "2018",
+                    59.1
+                ],
+                [
+                    "2019",
+                    63.9
+                ],
+                [
+                    "2020",
+                    65.9
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "zlevel": 0,
+            "z": 0
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\uc11c\uc6b8",
+                "\uacbd\uae30",
+                "\uc218\ub3c4\uad8c",
+                "\ube44\uc218\ub3c4\uad8c"
+            ],
+            "selected": {
+                "\uc11c\uc6b8": true,
+                "\uacbd\uae30": true,
+                "\uc218\ub3c4\uad8c": true,
+                "\ube44\uc218\ub3c4\uad8c": true
+            },
+            "show": true,
+            "right": "10%",
+            "top": "5%",
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14,
+            "icon": "pin"
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "axis",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "cross"
+        },
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0
+    },
+    "xAxis": [
+        {
+            "name": "\uc5f0\ub3c4",
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018",
+                "2019",
+                "2020"
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
+    "title": [
+        {
+            "text": "\uc9c0\uc5ed\ubcc4 \uccb4\uc911\uc870\uc808\uc2dc\ub3c4\uc728",
+            "subtext": "\ucd5c\uadfc 1\ub144\uac04 \uccb4\uc911 \uc720\uc9c0/\uac10\uc18c \ub178\ub825\uc744 \ud55c \uc0ac\ub78c\uc758 \uc218\uc758 \ube44\uc728",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ]
+};
+        chart_1a97141a31cb40d6a474dbb932cff00d.setOption(option_1a97141a31cb40d6a474dbb932cff00d);
+    </script>
+    </div>
+
+    <script>
+    </script>
+    <script>
+        (function() {
+            containers = document.getElementsByClassName("chart-container");
+            if(containers.length > 0) {
+                containers[0].style.display = "block";
+            }
+        })()
+
+        function showChart(evt, chartID) {
+            let containers = document.getElementsByClassName("chart-container");
+            for (let i = 0; i < containers.length; i++) {
+                containers[i].style.display = "none";
+            }
+
+            let tablinks = document.getElementsByClassName("tablinks");
+            for (let i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = "tablinks";
+            }
+
+            document.getElementById(chartID).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</body>
+</html>
